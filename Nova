@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Games Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <div class="main">
-    <div class="nav">
-    <div>
-        <h1>NOVA</h1>
+    <header>
+        <nav class="navbar">
+            <div class="logo">NOVA</div>
+        </nav>
+        <div class="aaa">
+            <ul class="links">
+                <a href="#">Categories</a>
+                <a href="#">All Games</a>
+                <a href="#">About</a>
+                <a href="#">FAQ</a>
+            </ul>
+        </div>
+        <ul>
+            <a href="#">Login / Signup</a>
+        </ul>
+    </header>
 
-    </div>
-    <div class="navv">
-        <h3>Categories</h3>
-        <h3>All Games</h3>
-        <h3>About</h3>
-        <h3>FAQ</h3>
-    </div>
-    <div class="navvv">
-        <h3>Login / Signup</h3>
-        <h3>EN</h3>
-    </div>
-</div>
-    <div class="Search">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search">
-    </div>
+    <section class="hero">
+        <h1 class="sas">BEST FREE GAMES</h1>
+        <h1>IN THIS WEBSITE</h1>
+    </section>
 
-    <div class="img">
-        <h1>BEST FREE GAMES <br>IN THIS WEBSITE </h1>
-    </div>
-</div>
+    <section class="games-section">
+        <h2>Most Downloaded</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <img src="/Leonardo_Phoenix_A_highly_detailed_ultrarealistic_4K_resolutio_2 1.png" alt="GTA V">
+                <h3>Grand Theft Auto V</h3>
+            </div>
+            <div class="game-card">
+                <img src="/Leonardo_Phoenix_A_highly_detailed_ultrarealistic_4K_resolutio_1 1.png" alt="Wanted">
+                <h3>Wanted: Dead or Alive</h3>
+            </div>
+            <div class="game-card">
+                <img src="/Leonardo_Phoenix_A_highly_detailed_ultrarealistic_4K_image_dep_0 1.png" alt="Shusha">
+                <h3>Shusha</h3>
+            </div>
+            <div class="game-card">
+                <img src="/Leonardo_Phoenix_A_highly_detailed_ultrarealistic_4K_cover_ima_3 1.png" alt="Landmark">
+                <h3>Landmark</h3>
+            </div>
+            <div class="game-card">
+                <img src="/Leonardo_Phoenix_A_highly_detailed_realistic_and_ultrahighdefi_2 1.png" alt="Race">
+                <h3>Race Arena</h3>
+            </div>
+            <div class="game-card">
+                <img src="/Leonardo_Phoenix_A_highly_detailed_realistic_and_ultrahighdefi_1 1.png" alt="Minecraft">
+                <h3>Minecraft</h3>
+            </div>
+            <div class="game-card">
+                <img src="/Leonardo_Phoenix_A_highly_detailed_realistic_and_atmospheric_c_1 1.png" alt="Assassin's Raid">
+                <h3>Assassin's Raid</h3>
+            </div>
+            <div class="game-card">
+                <img src="/Leonardo_Phoenix_A_gritty_highly_detailed_and_ultrarealistic_4_0 1.png" alt="Baku">
+                <h3>Baku</h3>
+            </div>
+            <div class="game-card">
+                <img src="/Leonardo_Phoenix_A_futuristic_highresolution_4K_ultraHD_cover_0 1.png" alt="Avengers">
+                <h3>Avengers</h3>
+            </div>
+        </div>
+    </section>
 </body>
 
-</html>
 
 
 
@@ -69,55 +102,116 @@
 
 
 
-
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+a {
+    text-decoration: none ;
+    color: black;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: black;
+}
 
-
-.nav{
-    background-color: #ffb800;
+header {
+    background-color: #fdd835;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    padding: 27px;
-    width: 940px;
-}
-
-
-.navv{
-    display: flex;
-    gap: 50px;
-}
-
-
-.navvv{
-    display: flex;
-    gap: 50px;
-}
-
-input{
-    width: 882px;
-    height: 50px;
-    border: none;
-}
-
-.search input{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.img{
-    background-image: url('/774697\ 1.png');
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background-size: 945px 500px;
-    height: 500px;
-    width: 945px;
-    color: #ffb800;
-    font-size: larger;
+}
+
+
+.sas{
+    color: #ffc107;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.links li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('/774697\ 1.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.games-section {
+    padding: 40px;
+    background-color: #ffc107;
+}
+
+.games-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-card {
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+.game-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.game-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Nova{
+    font-weight: bold;
 }
